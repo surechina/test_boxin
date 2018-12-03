@@ -1,0 +1,407 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jinhua su, sure, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARM.DLL V5.12.0.0
+Dialog DLL:      DARMP3.DLL
+    Target DLL: Segger\JLTAgdi.dll
+Dialog DLL:      TARMP3.DLL V1.02
+ 
+<h2>Project:</h2>
+C:\test_boxin\projects\ble_app_gatt_128\bk3435.uvproj
+Project File Date:  11/25/2018
+
+<h2>Output:</h2>
+Rebuild target 'BK3435_app'
+compiling arch_main.c...
+app\arch_main.c(203): warning:  #177-D: variable "cmd_pos" was declared but never referenced
+        char *cmd_pos = NULL;
+app\arch_main.c(204): warning:  #177-D: variable "ask_pos" was declared but never referenced
+        char *ask_pos = NULL;
+app\arch_main.c(205): warning:  #177-D: variable "cmd" was declared but never referenced
+        char cmd[10] = {0};
+app\arch_main.c(449): warning:  #174-D: expression has no effect
+        UART_PRINTF("error = %x\r\n", error);
+app\arch_main.c(449): warning:  #174-D: expression has no effect
+        UART_PRINTF("error = %x\r\n", error);
+app\arch_main.c(523): warning:  #174-D: expression has no effect
+        UART_PRINTF("power_mode = %d\r\n", icu_get_sleep_mode());
+app\arch_main.c: 6 warnings, 0 errors
+assembling boot_handlers.s...
+assembling boot_vectors.s...
+compiling rwble.c...
+compiling rwble_hl.c...
+compiling rwip.c...
+compiling emi.c...
+compiling flash.c...
+compiling gpio.c...
+compiling icu.c...
+compiling intc.c...
+compiling pwm.c...
+compiling timer.c...
+compiling wdt.c...
+compiling uart.c...
+compiling rf_xvr.c...
+compiling adc.c...
+..\..\sdk\plactform\driver\adc\adc.c(73): warning:  #174-D: expression has no effect
+          UART_PRINTF("g_adc_value=%x\r\n",g_adc_value);
+..\..\sdk\plactform\driver\adc\adc.c(73): warning:  #174-D: expression has no effect
+          UART_PRINTF("g_adc_value=%x\r\n",g_adc_value);
+..\..\sdk\plactform\driver\adc\adc.c: 2 warnings, 0 errors
+compiling bass.c...
+compiling bass_task.c...
+compiling diss.c...
+compiling diss_task.c...
+compiling fcc0s.c...
+compiling fcc0s_task.c...
+compiling attm_util128.c...
+compiling oads.c...
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(200): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(200): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(247): warning:  #174-D: expression has no effect
+                        UART_PRINTF("wait for reset!!!\r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(302): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(302): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(311): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.ver = %x \r\n", rxHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(311): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.ver = %x \r\n", rxHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(312): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.len = %x \r\n", rxHdr.len);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(312): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.len = %x \r\n", rxHdr.len);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(313): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.uid = %x \r\n", rxHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(313): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.uid = %x \r\n", rxHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(314): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.rom_ver = %x \r\n", rxHdr.rom_ver);                  
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(314): warning:  #174-D: expression has no effect
+        UART_PRINTF("rxHdr.rom_ver = %x \r\n", rxHdr.rom_ver);                  
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(319): warning:  #174-D: expression has no effect
+                UART_PRINTF("app part upgrade\r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(323): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.rom_ver = %x \r\n", ImgHdr.rom_ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(323): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.rom_ver = %x \r\n", ImgHdr.rom_ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(324): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.uid = %x \r\n", ImgHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(324): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.uid = %x \r\n", ImgHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(325): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.ver = %x \r\n", ImgHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(325): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.ver = %x \r\n", ImgHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(327): warning:  #174-D: expression has no effect
+        UART_PRINTF("oadBlkTot = %x \r\n", oadBlkTot);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(327): warning:  #174-D: expression has no effect
+        UART_PRINTF("oadBlkTot = %x \r\n", oadBlkTot);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(337): warning:  #174-D: expression has no effect
+                UART_PRINTF("app and stack upgrade\r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(341): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.uid = %x \r\n", ImgHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(341): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.uid = %x \r\n", ImgHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(342): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.ver = %x \r\n", ImgHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(342): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.ver = %x \r\n", ImgHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(344): warning:  #174-D: expression has no effect
+        UART_PRINTF("oadBlkTot = %x \r\n", oadBlkTot);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(344): warning:  #174-D: expression has no effect
+        UART_PRINTF("oadBlkTot = %x \r\n", oadBlkTot);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(354): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.rom_ver = %x \r\n", ImgHdr.rom_ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(354): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.rom_ver = %x \r\n", ImgHdr.rom_ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(355): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.uid = %x \r\n", ImgHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(355): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.uid = %x \r\n", ImgHdr.uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(356): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.ver = %x \r\n", ImgHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(356): warning:  #174-D: expression has no effect
+                UART_PRINTF("ImgHdr.ver = %x \r\n", ImgHdr.ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(418): warning:  #174-D: expression has no effect
+                        UART_PRINTF("uid = %x\r\n", uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(418): warning:  #174-D: expression has no effect
+                        UART_PRINTF("uid = %x\r\n", uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(419): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(419): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(419): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(419): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(419): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(420): warning:  #174-D: expression has no effect
+                        UART_PRINTF("ImgHdr.ver = %x, ver = %x\r\n",ImgHdr.ver, ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(420): warning:  #174-D: expression has no effect
+                        UART_PRINTF("ImgHdr.ver = %x, ver = %x\r\n",ImgHdr.ver, ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(420): warning:  #174-D: expression has no effect
+                        UART_PRINTF("ImgHdr.ver = %x, ver = %x\r\n",ImgHdr.ver, ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(437): warning:  #174-D: expression has no effect
+                        UART_PRINTF("uid = %x\r\n", uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(437): warning:  #174-D: expression has no effect
+                        UART_PRINTF("uid = %x\r\n", uid);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(438): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(438): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(438): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(438): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(438): warning:  #174-D: expression has no effect
+                        UART_PRINTF("blkNum = %x ,oadBlkNum %x,oadBlkTot %x,ver %x \r\n",blkNum,oadBlkNum,oadBlkTot,ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(439): warning:  #174-D: expression has no effect
+                        UART_PRINTF("ImgHdr.ver = %x, ver = %x\r\n",ImgHdr.ver, ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(439): warning:  #174-D: expression has no effect
+                        UART_PRINTF("ImgHdr.ver = %x, ver = %x\r\n",ImgHdr.ver, ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(439): warning:  #174-D: expression has no effect
+                        UART_PRINTF("ImgHdr.ver = %x, ver = %x\r\n",ImgHdr.ver, ver);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(447): warning:  #174-D: expression has no effect
+                        UART_PRINTF("oadImgBlockWrite: UNKNOWN UID\r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(464): warning:  #174-D: expression has no effect
+                                UART_PRINTF("last block \r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(479): warning:  #174-D: expression has no effect
+                UART_PRINTF("update down!\r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(540): warning:  #174-D: expression has no effect
+      UART_PRINTF("%s\r\n",__func__);  
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(540): warning:  #174-D: expression has no effect
+      UART_PRINTF("%s\r\n",__func__);  
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(547): warning:  #174-D: expression has no effect
+        UART_PRINTF("noti  = 0x%x\r\n",&noti[0]);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(547): warning:  #174-D: expression has no effect
+        UART_PRINTF("noti  = 0x%x\r\n",&noti[0]);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c(565): warning:  #174-D: expression has no effect
+                        UART_PRINTF("KE_MSG_ALLOC_DYN GATTC_SEND_EVT_CMD  == NULL \r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads.c: 63 warnings, 0 errors
+compiling oads_task.c...
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(42): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(42): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(133): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(133): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n",__func__);
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(192): warning:  #174-D: expression has no effect
+                        while(1){ UART_PRINTF("oads_env == null\r\n");};
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(253): warning:  #174-D: expression has no effect
+                UART_PRINTF("OADS_BUSY\r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c(338): warning:  #174-D: expression has no effect
+                        UART_PRINTF("oads OADS_BUSY \r\n");
+..\..\sdk\ble_stack\com\profiles\oad\src\oads_task.c: 7 warnings, 0 errors
+compiling prf.c...
+compiling prf_utils.c...
+compiling attm_oad_util128.c...
+compiling app.c...
+app\app.c(193): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(num <10 && num>=0)
+app\app.c(405): warning:  #174-D: expression has no effect
+                UART_PRINTF("appm start advertising\r\n");
+app\app.c(434): warning:  #174-D: expression has no effect
+                UART_PRINTF("appm stop advertising\r\n");
+app\app.c(458): warning:  #174-D: expression has no effect
+      UART_PRINTF("intv_min = %d,intv_max = %d,latency = %d,time_out = %d\r\n",
+app\app.c(458): warning:  #174-D: expression has no effect
+      UART_PRINTF("intv_min = %d,intv_max = %d,latency = %d,time_out = %d\r\n",
+app\app.c(458): warning:  #174-D: expression has no effect
+      UART_PRINTF("intv_min = %d,intv_max = %d,latency = %d,time_out = %d\r\n",
+app\app.c(458): warning:  #174-D: expression has no effect
+      UART_PRINTF("intv_min = %d,intv_max = %d,latency = %d,time_out = %d\r\n",
+app\app.c(458): warning:  #174-D: expression has no effect
+      UART_PRINTF("intv_min = %d,intv_max = %d,latency = %d,time_out = %d\r\n",
+app\app.c: 8 warnings, 0 errors
+compiling app_batt.c...
+compiling app_dis.c...
+compiling app_oads.c...
+app\app_oads.c(82): warning:  #174-D: expression has no effect
+      UART_PRINTF( "app_oad_add_oads\r\n" );
+app\app_oads.c(101): warning:  #174-D: expression has no effect
+      UART_PRINTF( "app_oad_add_oads d = %x,s = %x\r\n", TASK_GAPM, TASK_APP );
+app\app_oads.c(101): warning:  #174-D: expression has no effect
+      UART_PRINTF( "app_oad_add_oads d = %x,s = %x\r\n", TASK_GAPM, TASK_APP );
+app\app_oads.c(101): warning:  #174-D: expression has no effect
+      UART_PRINTF( "app_oad_add_oads d = %x,s = %x\r\n", TASK_GAPM, TASK_APP );
+app\app_oads.c(160): warning:  #174-D: expression has no effect
+                UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(160): warning:  #174-D: expression has no effect
+                UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(161): warning:  #174-D: expression has no effect
+                UART_PRINTF("msgid = 0x%04x,destid = 0x%x,srcid = 0x%x\r\n",msgid,dest_id,src_id);
+app\app_oads.c(161): warning:  #174-D: expression has no effect
+                UART_PRINTF("msgid = 0x%04x,destid = 0x%x,srcid = 0x%x\r\n",msgid,dest_id,src_id);
+app\app_oads.c(161): warning:  #174-D: expression has no effect
+                UART_PRINTF("msgid = 0x%04x,destid = 0x%x,srcid = 0x%x\r\n",msgid,dest_id,src_id);
+app\app_oads.c(161): warning:  #174-D: expression has no effect
+                UART_PRINTF("msgid = 0x%04x,destid = 0x%x,srcid = 0x%x\r\n",msgid,dest_id,src_id);
+app\app_oads.c(175): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(175): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(179): warning:  #174-D: expression has no effect
+                UART_PRINTF("OTA is OFF\r\n");
+app\app_oads.c(195): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(195): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(207): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(207): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(229): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(229): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(257): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(257): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(275): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c(275): warning:  #174-D: expression has no effect
+          UART_PRINTF("%s\r\n",__func__);
+app\app_oads.c: 23 warnings, 0 errors
+compiling app_task.c...
+app\app_task.c(148): warning:  #174-D: expression has no effect
+        UART_PRINTF("param->operation = 0x%x, param->status = 0x%x \r\n", param->operation, param->status);
+app\app_task.c(148): warning:  #174-D: expression has no effect
+        UART_PRINTF("param->operation = 0x%x, param->status = 0x%x \r\n", param->operation, param->status);
+app\app_task.c(148): warning:  #174-D: expression has no effect
+        UART_PRINTF("param->operation = 0x%x, param->status = 0x%x \r\n", param->operation, param->status);
+app\app_task.c(348): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n", __func__);
+app\app_task.c(348): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n", __func__);
+app\app_task.c(410): warning:  #174-D: expression has no effect
+        UART_PRINTF("gapc_cmp_evt_handler operation = %x\r\n",param->operation);
+app\app_task.c(410): warning:  #174-D: expression has no effect
+        UART_PRINTF("gapc_cmp_evt_handler operation = %x\r\n",param->operation);
+app\app_task.c(417): warning:  #174-D: expression has no effect
+                UART_PRINTF("gapc update params fail !\r\n");
+app\app_task.c(421): warning:  #174-D: expression has no effect
+                                UART_PRINTF("gapc update params ok !\r\n");
+app\app_task.c(430): warning:  #174-D: expression has no effect
+                    UART_PRINTF("gapc security req fail !\r\n");
+app\app_task.c(434): warning:  #174-D: expression has no effect
+                    UART_PRINTF("gapc security req ok !\r\n");
+app\app_task.c(441): warning:  #174-D: expression has no effect
+                    UART_PRINTF("gapc bond fail !\r\n");
+app\app_task.c(445): warning:  #174-D: expression has no effect
+                    UART_PRINTF("gapc bond ok !\r\n");
+app\app_task.c(453): warning:  #174-D: expression has no effect
+                                UART_PRINTF("gapc encrypt start fail !\r\n");
+app\app_task.c(457): warning:  #174-D: expression has no effect
+                                UART_PRINTF("gapc encrypt start ok !\r\n");
+app\app_task.c(488): warning:  #174-D: expression has no effect
+        UART_PRINTF("disconnect link reason = 0x%x\r\n",param->reason);
+app\app_task.c(488): warning:  #174-D: expression has no effect
+        UART_PRINTF("disconnect link reason = 0x%x\r\n",param->reason);
+app\app_task.c(565): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n", __func__);
+app\app_task.c(565): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s\r\n", __func__);
+app\app_task.c(653): warning:  #223-D: function "Delay_ms" declared implicitly
+         Delay_ms(2);
+app\app_task.c(747): warning:  #174-D: expression has no effect
+        UART_PRINTF("slave send param_update_req\r\n");
+app\app_task.c(775): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n", __func__);
+app\app_task.c(775): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n", __func__);
+app\app_task.c(776): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_rx_octets = %d\r\n",param->max_rx_octets);
+app\app_task.c(776): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_rx_octets = %d\r\n",param->max_rx_octets);
+app\app_task.c(777): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_rx_time = %d\r\n",param->max_rx_time);
+app\app_task.c(777): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_rx_time = %d\r\n",param->max_rx_time);
+app\app_task.c(778): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_tx_octets = %d\r\n",param->max_tx_octets);
+app\app_task.c(778): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_tx_octets = %d\r\n",param->max_tx_octets);
+app\app_task.c(779): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_tx_time = %d\r\n",param->max_tx_time);
+app\app_task.c(779): warning:  #174-D: expression has no effect
+        UART_PRINTF("1max_tx_time = %d\r\n",param->max_tx_time);
+app\app_task.c(799): warning:  #174-D: expression has no effect
+      UART_PRINTF("%s \r\n", __func__);
+app\app_task.c(799): warning:  #174-D: expression has no effect
+      UART_PRINTF("%s \r\n", __func__);
+app\app_task.c(800): warning:  #174-D: expression has no effect
+        UART_PRINTF("con_interval = %d\r\n",param->con_interval);
+app\app_task.c(800): warning:  #174-D: expression has no effect
+        UART_PRINTF("con_interval = %d\r\n",param->con_interval);
+app\app_task.c(801): warning:  #174-D: expression has no effect
+        UART_PRINTF("con_latency = %d\r\n",param->con_latency);
+app\app_task.c(801): warning:  #174-D: expression has no effect
+        UART_PRINTF("con_latency = %d\r\n",param->con_latency);
+app\app_task.c(802): warning:  #174-D: expression has no effect
+        UART_PRINTF("sup_to = %d\r\n",param->sup_to);
+app\app_task.c(802): warning:  #174-D: expression has no effect
+        UART_PRINTF("sup_to = %d\r\n",param->sup_to);
+app\app_task.c(824): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n",__func__);
+app\app_task.c(824): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n",__func__);
+app\app_task.c(825): warning:  #174-D: expression has no effect
+        UART_PRINTF("ind->mtu = %d,seq = %d\r\n",ind->mtu,ind->seq_num);
+app\app_task.c(825): warning:  #174-D: expression has no effect
+        UART_PRINTF("ind->mtu = %d,seq = %d\r\n",ind->mtu,ind->seq_num);
+app\app_task.c(825): warning:  #174-D: expression has no effect
+        UART_PRINTF("ind->mtu = %d,seq = %d\r\n",ind->mtu,ind->seq_num);
+app\app_task.c(846): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n", __func__);
+app\app_task.c(846): warning:  #174-D: expression has no effect
+        UART_PRINTF("%s \r\n", __func__);
+app\app_task.c: 46 warnings, 0 errors
+compiling app_fcc0.c...
+app\app_fcc0.c(119): warning:  #174-D: expression has no effect
+        UART_PRINTF("param->ntf_cfg = %x\r\n",param->ntf_cfg);
+app\app_fcc0.c(119): warning:  #174-D: expression has no effect
+        UART_PRINTF("param->ntf_cfg = %x\r\n",param->ntf_cfg);
+app\app_fcc0.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=22648 RO-data=992 RW-data=100 ZI-data=7880  
+After Build - User command #1: fromelf --bin --output .\output\app\bk3435_ble_app.bin .\obj\bk3435_ble_app.axf
+After Build - User command #2: .\output\encrypt_app.bat
+C:\test_boxin\projects\ble_app_gatt_128>.\output\BinConvert_3435_OAD  -oad .\output\bim\bk3435_ble_bim.bin  .\output\stack\bk3435_ble_stack.bin  .\output\app\bk3435_ble_app.bin -m 0x1F00 -l 0x1E200 -v 0x1188 -rom_v 0x0008 -e 00000000 00000000 00000000 00000000 
+cmd_bin_oad.stack_file_addr :0x1f00
+binary version hex:0x1188; dec:4488
+Arm Image Binary will be converted to OAD format binary file.....
+cmd_bin_oad.stack_file_addr=1f00
+boot_bin_len=1ca0
+add stack bin start
+        Encrypt Seccessfully!
+        File Size: 0x26334
+oad_stack_app_bin_len=24300
+oad_app_bin_len=63d0
+d3 86 85 1c 88 11 f4 18 42 42 42 42 ff ff 08 00 /**< @CREATE_FILE_SUCCESS */
+/**< @Download flash file:.\output\app\bk3435_ble_app_merge_crc.bin
+/**< @OAD file :.\output\app\bk3435_ble_app_stack_oad.bin,CRC = 0x90f7af15
+/**< @OAD file :.\output\app\bk3435_ble_app_oad.bin,CRC = 0x1c8586d3
+/**< @author <gang.cheng@bekencorp.com> */
+/**< @version v0.3 */
+".\obj\bk3435_ble_app.axf" - 0 Error(s), 157 Warning(s).
