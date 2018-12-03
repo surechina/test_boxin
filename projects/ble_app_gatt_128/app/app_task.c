@@ -686,7 +686,7 @@ static int app_enable_adv_handler(ke_msg_id_t const msgid,
 							 void const *param,
 							 ke_task_id_t const dest_id,
 							 ke_task_id_t const src_id)  
-{
+{ 
 	 icu_set_sleep_mode(1); 
 	 
 	// while(gpio_get_input(GPIOA_3) == 0);
