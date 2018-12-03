@@ -645,7 +645,7 @@ void rw_app_enter(void)
 	    		cpu_idle_sleep();
 	    	}
     	}
-#endif
+#endif 
 		//if(REG_APB5_GPIO_WUATOD_TYPE == 0x00000008)//不能完全看是否下降沿，升级完成重启后都是下降沿出发，就会进入休眠
 #if 0//SYSTEM_SLEEP	
 			// Check if the processor clock can be gated
